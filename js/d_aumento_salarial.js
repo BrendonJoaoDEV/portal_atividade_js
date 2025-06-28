@@ -9,15 +9,15 @@ document.addEventListener('DOMContentLoaded', function () {
             resultado.innerHTML = `O salário informado é inválido, por favor digite um salário maior que R$00,00`;
         } else if (salarioConvertido > 1500) {
             let reajuste = salarioConvertido * (5/100);
-            let salario_reajustado = salario + reajuste;
+            let salarioReajustado = salario + reajuste;
             resultado.innerHTML = `Salário anterior: R$${salarioConvertido}<br>Reajuste: R$${reajuste}<br>Salário reajustado: R$${salario_reajustado}`;
         } else if (salarioConvertido < 1000) {
             let reajuste = salarioConvertido * (10/100);
-            let salario_reajustado = salarioConvertido + reajuste;
+            let salarioReajustado = salarioConvertido + reajuste;
             resultado.innerHTML = `Salário anterior: R$${salarioConvertido}<br>Reajuste: R$${reajuste}<br>Salário reajustado: R$${salario_reajustado}`;
         } else {
             let reajuste = 0
-            let salario_reajustado = salarioConvertido + reajuste
+            let salarioReajustado = salarioConvertido + reajuste
             resultado.innerHTML = `Salário anterior: R$${salarioConvertido}<br>Reajuste: R$${reajuste}<br>Salário reajustado: R$${salario_reajustado}<br>OBS: Seu salário não sofreu reajuste!`;
         }
     })
