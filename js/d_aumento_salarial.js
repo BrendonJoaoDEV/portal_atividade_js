@@ -10,15 +10,15 @@ document.addEventListener('DOMContentLoaded', function () {
         } else if (salarioConvertido > 1500) {
             let reajuste = salarioConvertido * (5/100);
             let salarioReajustado = salario + reajuste;
-            resultado.innerHTML = `Salário anterior: R$${salarioConvertido}<br>Reajuste: R$${reajuste}<br>Salário reajustado: R$${salario_reajustado}`;
+            resultado.innerHTML = `Salário anterior: R$${salarioConvertido}<br>Reajuste: R$${reajuste}<br>Salário reajustado: R$${salarioReajustado}`;
         } else if (salarioConvertido < 1000) {
             let reajuste = salarioConvertido * (10/100);
             let salarioReajustado = salarioConvertido + reajuste;
-            resultado.innerHTML = `Salário anterior: R$${salarioConvertido}<br>Reajuste: R$${reajuste}<br>Salário reajustado: R$${salario_reajustado}`;
+            resultado.innerHTML = `Salário anterior: R$${salarioConvertido}<br>Reajuste: R$${reajuste}<br>Salário reajustado: R$${salarioReajustado}`;
         } else {
             let reajuste = 0
             let salarioReajustado = salarioConvertido + reajuste
-            resultado.innerHTML = `Salário anterior: R$${salarioConvertido}<br>Reajuste: R$${reajuste}<br>Salário reajustado: R$${salario_reajustado}<br>OBS: Seu salário não sofreu reajuste!`;
+            resultado.innerHTML = `Salário anterior: R$${salarioConvertido}<br>Reajuste: R$${reajuste}<br>Salário reajustado: R$${salarioReajustado}<br>OBS: Seu salário não sofreu reajuste!`;
         }
     })
 })
