@@ -1,22 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Verificar se a página foi carregada
-    const main = document.querySelector('main');
-
-    // Carregar as opções das funcionalidade
-    carregar(main, mensagemBasica);
-    carregar(main, funcionalidades);
-
-    // Ao clicar numa função, limpar main e carregar a função
-
-    adicionarEventoBotaoPrincipal(main, html[0], 'botao-par-impar', verificarParImpar);
-    adicionarEventoBotaoPrincipal(main, html[1], 'botao-maior-menor', encontrarMaiorMenor);
-    adicionarEventoBotaoPrincipal(main, html[2], 'botao-velocidade', monitorarVelocidade);
-    // adicionarEventoBotaoPrincipal(main, html[3], 'botao-salario', aumentarSalario);
-    // adicionarEventoBotaoPrincipal(main, html[4], 'botao-passagens', calcularPassagem);
-    // adicionarEventoBotaoPrincipal(main, html[5], 'botao-ano-bissexto', verificarAnoBissexto);
-    // adicionarEventoBotaoPrincipal(main, html[6], 'botao-triangulo', verificarTriangulo);
-    // adicionarEventoBotaoPrincipal(main, html[7], 'botao-raizes', calcularRaizesEquacaoSegundoGrau);
-});
+    paginaInicial()});
 
 // Funções utilitárias
 function limparElemento (elemento) {
@@ -27,6 +10,22 @@ function carregar (elementoCarregamento, htmlCarregamento) {
     const novaSecao = document.createElement('section');
     novaSecao.innerHTML = htmlCarregamento;
     elementoCarregamento.appendChild(novaSecao);
+}
+
+function paginaInicial () {
+    const main = document.querySelector('main');
+    limparElemento(main);
+    carregar(main, mensagemBasica);
+    carregar(main, funcionalidades);
+
+    adicionarEventoBotaoPrincipal(main, html[0], 'botao-par-impar', verificarParImpar);
+    adicionarEventoBotaoPrincipal(main, html[1], 'botao-maior-menor', encontrarMaiorMenor);
+    adicionarEventoBotaoPrincipal(main, html[2], 'botao-velocidade', monitorarVelocidade);
+    // adicionarEventoBotaoPrincipal(main, html[3], 'botao-salario', aumentarSalario);
+    // adicionarEventoBotaoPrincipal(main, html[4], 'botao-passagens', calcularPassagem);
+    // adicionarEventoBotaoPrincipal(main, html[5], 'botao-ano-bissexto', verificarAnoBissexto);
+    // adicionarEventoBotaoPrincipal(main, html[6], 'botao-triangulo', verificarTriangulo);
+    // adicionarEventoBotaoPrincipal(main, html[7], 'botao-raizes', calcularRaizesEquacaoSegundoGrau);
 }
 
 function adicionarEventoBotaoPrincipal (elementoPai, htmlCarregar, botao, funcionalidade) {
@@ -134,10 +133,7 @@ function verificarParImpar () {
     });
 
     adicionarEventoBotaoSecundario('botao-voltar', function () {
-        const main = document.querySelector('main');
-        limparElemento(main);
-        carregar(main, mensagemBasica);
-        carregar(main, funcionalidades);
+        return paginaInicial();
     });
 }
 
@@ -168,10 +164,7 @@ function encontrarMaiorMenor () {
     });
 
     adicionarEventoBotaoSecundario('botao-voltar', function () {
-        const main = document.querySelector('main');
-        limparElemento(main);
-        carregar(main, mensagemBasica);
-        carregar(main, funcionalidades);
+        return paginaInicial();
     });
 }
 
@@ -192,9 +185,6 @@ function monitorarVelocidade () {
     })
 
     adicionarEventoBotaoSecundario('botao-voltar', function () {
-        const main = document.querySelector('main');
-        limparElemento(main);
-        carregar(main, mensagemBasica);
-        carregar(main, funcionalidades);
+        return paginaInicial();
     });
 }
