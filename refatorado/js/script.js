@@ -1,5 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
-    paginaInicial()});
+document.addEventListener('DOMContentLoaded', function () {paginaInicial()});
 
 // Funções utilitárias
 function limparElemento (elemento) {
@@ -99,6 +98,7 @@ const html = [
     </form>
     <p id="saida"></p>
     <button type="button" id="botao-voltar">Voltar</button>`,
+
     `<form>
         <input type="number" id="entrada1" placeholder="Valor 1">
         <input type="number" id="entrada2" placeholder="Valor 2">
@@ -107,12 +107,52 @@ const html = [
     </form>
     <p id="saida"></p>
     <button type="button" id="botao-voltar">Voltar</button>`,
+
     `<form>
         <input type="number" id="entrada" placeholder="Digite a velocidade">
+        <button type="button" id="botao-verificar">Verificar velocidade</button>
+    </form>
+    <p id="saida"></p>
+    <button type="button" id="botao-voltar">Voltar</button>`,
+
+    `<form>
+        <input type="number" id="entrada" placeholder="Digite o valor do salário">
+        <button type="button" id="botao-verificar">Verificar aumento</button>
+    </form>
+    <p id="saida"></p>
+    <button type="button" id="botao-voltar">Voltar</button>`,
+
+    `<form>
+        <input type="number" id="entrada" placeholder="Digite a distância da viagem">
+        <button type="button" id="botao-verificar">Calcular passagem</button>
+    </form>
+    <p id="saida"></p>
+    <button type="button" id="botao-voltar">Voltar</button>`,
+
+    `<form>
+        <input type="number" id="entrada" placeholder="Digite o ano">
+        <button type="button" id="botao-verificar">Verificar se é bissexto</button>
+    </form>
+    <p id="saida"></p>
+    <button type="button" id="botao-voltar">Voltar</button>`,
+
+    `<form>
+        <input type="number" id="entrada1" placeholder="Aresta 1">
+        <input type="number" id="entrada2" placeholder="Aresta 2">
+        <input type="number" id="entrada3" placeholder="Aresta 3">
         <button type="button" id="botao-verificar">Verificar</button>
     </form>
     <p id="saida"></p>
     <button type="button" id="botao-voltar">Voltar</button>`,
+
+    `<form>
+        <input type="number" id="entrada1" placeholder="Valor de A">
+        <input type="number" id="entrada2" placeholder="Valor de B">
+        <input type="number" id="entrada3" placeholder="Valor de C">
+        <button type="button" id="botao-verificar">Calcular raízes</button>
+    </form>
+    <p id="saida"></p>
+    <button type="button" id="botao-voltar">Voltar</button>`
 ];
 
 // Ao finalizar a função, limpar main e carregar as funcionalidades
