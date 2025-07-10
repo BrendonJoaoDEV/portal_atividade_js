@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2f2f2f;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 3%;
+    background-color: rgb(224, 240, 5);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    width: 50%;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    margin: 3%;
+    border-radius: 0.5vw;
+    background-color: #1f1f1f;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+    border-radius: 0.5vw;
+    background-color: #1f1f1f;
+}
+
+form input {
+    font-size: 2rem;
+    margin: 5%;
+}
+
+button {
+    font-size: 1.3rem;
+    margin: 1.5%;
+    padding: 0.5%;
+    border-radius: 0.3vw;
+    color: #f0f0f0;
+    background-color: #2f2f2f;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #000000;
+}
+
+h3 {
+    font-size: 2.3rem;
+    color: rgb(224, 240, 5);
+}
+
+h4 {
+    font-size: 2.5rem;
+    color: #2f2f2f;
+}
+
+p {
+    font-size: 1.4rem;
+    color: #f0f0f0;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+ 
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 1%;
+    background-color: #1f1f1f;
+}
+
+footer > p {
+    color: rgb(224, 240, 5);
+}
+
+#botao-voltar {
+    position: fixed;
+    right: 0.1%;
+    bottom: 0.1%;
+}
+
+#saida {
+    text-align: center;
+    margin: 5%;
+}
